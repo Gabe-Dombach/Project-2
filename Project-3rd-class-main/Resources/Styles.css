@@ -11,8 +11,19 @@ h1 {
 	font: 40px;
 }
 header {
+	height: fit-content;
+	width: 100%;
 	text-align: center;
 	margin-bottom: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.start{
+	width:10%;
+	height: 10%;
+	position: relative;
+	left:45%;
 }
 
 #b1,
@@ -45,7 +56,14 @@ header {
 #b7 {
 	margin-bottom: 0;
 }
-
+.goBack{
+	text-decoration: none;
+	padding:1vh;
+	border: 2px solid red;
+	margin:10px;
+	color: red;
+	font-size: xx-large;
+}
 .gameboard {
 	border: solid black 5px;
 	background-color: lightgray;
