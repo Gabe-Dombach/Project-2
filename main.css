@@ -3,3 +3,21 @@
     padding:0;
     box-sizing: border-box;
 }
+
+.button{
+    text-decoration: none;
+    color:red;
+    font-size: xx-large;
+    text-align: center;
+    padding:10%;
+    border:5px solid red;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 60vh;
+    justify-content: space-evenly;
+    margin: auto;
+    border:1px solid black;
+}
