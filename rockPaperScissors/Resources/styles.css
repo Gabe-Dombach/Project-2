@@ -50,7 +50,7 @@ img {
 .boxxer {
 	display: flex;
 	/* height: auto; */
-	justify-content: cener;
+	justify-content: center;
 }
 
 body {
