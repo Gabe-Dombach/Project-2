@@ -1,15 +1,18 @@
-const rockPaperScissors = ["rock", "paper", "scissors"];
+const rockPaperScissors = ["Rock", "Paper", "Scissors"];
 //player choice calls
 $(".rock-Choice").click(function () {
-	playerChoice = "rock";
+	playerChoice = "Rock";
+	$(".playerSelected").html(playerChoice);
 });
 
 $(".paper-Choice").click(function () {
-	playerChoice = "paper";
+	playerChoice = "Paper";
+	$(".playerSelected").html(playerChoice);
 });
 
 $(".scissor-Choice").click(function () {
-	playerChoice = "scissors";
+	playerChoice = "Scissors";
+	$(".playerSelected").html(playerChoice);
 });
 
 $(".choices").click(function () {
@@ -18,25 +21,41 @@ $(".choices").click(function () {
 	compChoice = rockPaperScissors[random];
 
 	//win logic
-	if (compChoice == "rock") {
-		if (playerChoice == "scissors") {
-			window.alert("Computer chose Rock. You won.");
-		} else if (playerChoice == "paper") {
-			window.alert("Computer chose Rock. You won!");
+	if (compChoice == "Rock") {
+		$(".compSelected").html(compChoice);
+		if (playerChoice == "Scissors") {
+			let gameWinner = "Computer";
+			$(".winner").html(gameWinner);
+		} else if (playerChoice == "Paper") {
+			gameWinner = "Player";
+			$(".winner").html(gameWinner);
+		} else {
+			gameWinner = "Tie";
+			$(".winner").html(gameWinner);
 		}
-	} else if (compChoice == "paper") {
-		if (playerChoice == "rock") {
-			window.alert("Computer chose Paper. You lost.");
-		} else if (playerChoice == "scissors") {
-			window.alert("Computer chose Paper. You won.");
+	} else if (compChoice == "Paper") {
+		$(".compSelected").html(compChoice);
+		if (playerChoice == "Rock") {
+			gameWinner = "Computer";
+			$(".winner").html(gameWinner);
+		} else if (playerChoice == "Scissors") {
+			gameWinner = "Player";
+			$(".winner").html(gameWinner);
+		} else {
+			gameWinner = "Tie";
+			$(".winner").html(gameWinner);
 		}
-	} else if (compChoice == "scissors") {
-		if (playerChoice == "rock") {
-			window.alert("Computer chose Scissors. You won!");
-		} else if (playerChoice == "paper") {
-			window.alert("Computer chose Scissors. You lost.");
+	} else if (compChoice == "Scissors") {
+		$(".compSelected").html(compChoice);
+		if (playerChoice == "Rock") {
+			gameWinner = "Player";
+			$(".winner").html(gameWinner);
+		} else if (playerChoice == "Paper") {
+			gameWinner = "Computer";
+			$(".winner").html(gameWinner);
+		} else {
+			gameWinner = "Tie";
+			$(".winner").html(gameWinner);
 		}
-	} else if (compChoice == playerChoice) {
-		window.alert(`Computer chose ${compChoice}. You tied.`);
 	}
 });
