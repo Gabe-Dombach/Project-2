@@ -43,6 +43,7 @@ h2 {
 }
 
 img { /*Image sizing */
+    cursor:pointer;
 	height: 30vh;
 	width: 30vh;
 	margin: 0;

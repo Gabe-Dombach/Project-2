@@ -13,25 +13,26 @@
 
 			<div class="scoreboard">
 				<!--Scoreboard setup-->
-				<h2 class="playerScore">Player:</h2>
-				<h2 class="aiScore">Computer:</h2>
+				<h2 class="playerScore">Player: <span class="playerSelected"></span></h2>
+				<h2 class="aiScore">Computer: <span class="compSelected"></span></h2>
 			</div>
 		</header>
 		<section class="leftBox">
-
 			<div class="boxxer">
 				<!--Choices-->
-				<a href="" class="rock-Choice choices"
+				<a class="rock-Choice choices"
 					><img src="Resources/images/rock.png"
 				/></a>
-				<a href="" class="paper-Choice choices"
+				<a class="paper-Choice choices"
 					><img src="Resources/images/paper.jpeg"
 				/></a>
-				<a href="" class="scissor-Choice choices"
+				<a class="scissor-Choice choices"
 					><img src="Resources/images/scissors.jpeg"
 				/></a>
 			</div>
-			
+		</section>
+		<section id="winnerBox">
+			<h2>Winner: <span class="winner"></span></h2>
 		</section>
 <!--Link to script page-->
 		<script src="Resources/script.js"></script>
