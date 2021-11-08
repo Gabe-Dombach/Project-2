@@ -1,7 +1,5 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+ 
 }
 
 .button{
@@ -19,6 +17,13 @@
     height: 60vh;
     justify-content: space-evenly;
     margin: auto;
-    border:1px solid black;
+    
     margin-top: 10%;
+    
+}
+body {
+background-color: lightseagreen;
+}
+a { 
+    background-color: moccasin;
 }
