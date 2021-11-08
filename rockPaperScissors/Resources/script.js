@@ -35,7 +35,7 @@ $(".choices").click(function () {
 			window.alert("Computer chose Paper. You won!.");
 		}
 	} else {
-		if (playerChoice == "rock") {
+		if (playerChoice == "scissors") {
 			window.alert("Computer chose Scissors. You won!");
 		} else if (playerChoice == "paper") {
 			window.alert("Computer chose Scissors. You lost.");
