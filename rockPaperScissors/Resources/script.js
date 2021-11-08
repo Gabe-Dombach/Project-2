@@ -1,22 +1,22 @@
 const rockPaperScissors = ["rock", "paper", "scissors"];
 
-const random = Math.floor(Math.random() * rockPaperScissors.length);
-console.log(rockPaperScissors[random]);
+$(".rock-Choice").click(function () {
+   playerChoice = "rock";
+});
 
-compChoice = rockPaperScissors[random];
+$(".paper-Choice").click(function () {
+   playerChoice = "paper";
+});
+
+$(".scissors-Choice").click(function () {
+   playerChoice = "scissors";
+});
 
 $(".choices").click(function () {
-	$(".rock-Choice").click(function () {
-		playerChoice = "rock";
-	});
+	const random = Math.floor(Math.random() * rockPaperScissors.length);
 
-	$(".paper-Choice").click(function () {
-		playerChoice = "paper";
-	});
+	compChoice = rockPaperScissors[random];
 
-	$(".scissors-Choice").click(function () {
-		playerChoice = "scissors";
-	});
 
 	if (compChoice == "rock") {
 		if (playerChoice == "rock") {
