@@ -7,11 +7,11 @@ $(document).ready(function () {
 	$("#b6").prop("disabled", true);
 	$("#b7").prop("disabled", true);
 	$("#b8").prop("disabled", true);
-	$("#b9").prop("disabled", true);
+	$("#b9").prop("disabled", true);//disables all tiles when the page loads
 });
 let backroundMusic = new Audio();
 backroundMusic.src = "Resources/music.mp3";
-backroundMusic.loop = true;
+backroundMusic.loop = true;//set up audio object and play when start is pushed
 function start() {
 	backroundMusic.play();
 
@@ -24,7 +24,7 @@ function start() {
 	$("#b7").prop("disabled", false);
 	$("#b8").prop("disabled", false);
 	$("#b9").prop("disabled", false);
-	flag = 1;
+	flag = 1;//enable squares and set the turn to 1
 		// Here, Printing Result
 		if (flag == 1) {
 			$("#turn").html("X");

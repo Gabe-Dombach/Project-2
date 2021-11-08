@@ -1,17 +1,17 @@
 * {
 	margin: 0;
-	padding: 0;
+	padding: 0;/*setup for entire page*/
 	box-sizing: border-box;
 }
 body {
 	background-color: #89cff0;
 }
 h1 {
-	color: red;
+	color: red;/*header styling*/
 	font: 40px;
 }
 header {
-	height: fit-content;
+	height: fit-content;/*setup header with a flexbox to evenly space out its contents*/
 	width: 100%;
 	text-align: center;
 	margin-bottom: 2vh;
@@ -21,7 +21,7 @@ header {
 }
 .start{
 	width:10%;
-	height: 10%;
+	height: 10%;/*Set dimensions of the start button as well as positon it so it is centered*/
 	position: relative;
 	left:45%;
 }
@@ -41,7 +41,7 @@ header {
 	margin: 3px;
 	border-radius: 6px;
 	font-size: 10vh;
-	text-align: center;
+	text-align: center;/*Set the size and color of the input fields*/
 	color: rebeccapurple;
 	cursor: grab;
 	caret-color: transparent;
@@ -52,7 +52,7 @@ header {
 	margin-top: 0;
 }
 #b8,
-#b9,
+#b9,/*remove margin top and bottom from the top and bottom rows so that it doesnt interfere with the spacing*/
 #b7 {
 	margin-bottom: 0;
 }
@@ -61,7 +61,7 @@ header {
 	padding:1vh;
 	border: 2px solid red;
 	margin:10px;
-	color: red;
+	color: red;/*Setup for return to menue button*/
 	font-size: xx-large;
 	background-color: moccasin;
 }
@@ -70,7 +70,7 @@ header {
 	background-color: lightgray;
 	margin: auto;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column;/*setup sizing and colors for gameboard flexbox*/
 	width: fit-content;
 	height: fit-content;
 	padding: 0;
@@ -81,5 +81,5 @@ header {
 	height: 40px;
 	border: 1px solid;
 	margin: auto;
-	border-radius: 4px;
+	border-radius: 4px;/*setup for restart game button*/
 }

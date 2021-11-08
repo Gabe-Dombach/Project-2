@@ -1,5 +1,5 @@
 const rockPaperScissors = ["rock", "paper", "scissors"];
-
+//player choice calls
 $(".rock-Choice").click(function () {
 	playerChoice = "rock";
 });
@@ -13,11 +13,11 @@ $(".scissors-Choice").click(function () {
 });
 
 $(".choices").click(function () {
-	const random = Math.floor(Math.random() * rockPaperScissors.length);
+	const random = Math.floor(Math.random() * rockPaperScissors.length);//Random choice generator (AI oponent)
 
 	compChoice = rockPaperScissors[random];
 
-	if (compChoice == "rock") {
+	if (compChoice == "rock") {//win logic
 		if (playerChoice == "rock") {
 			window.alert("Computer chose Rock. You tied.");
 		} else if (playerChoice == "paper") {

@@ -7,14 +7,14 @@
 	<body>
 		<header class="header1">
 			<a href ='../main_page.html' class='goBack'>F*** go back</a>
-
+			<!--Title Navigation and start button-->
 			<h1>PLAY TIC TAC TOE :) ;)</h1>
 			<h3>Click Start to begin :)</h3>
 			<button onclick="start()" class='start'>START</button>
 		</header>
 		<section class="gameboard">
 			<br /><br />
-			<div class="col">
+			<div class="col"><!--Gameboard made up of text input fields-->
 				<input type="text" id="b1" onclick="myfunc_3(); myfunc()" />
 				<input type="text" id="b2" onclick="myfunc_4(); myfunc()" />
 				<input type="text" id="b3" onclick="myfunc_5(); myfunc()" />
@@ -32,12 +32,13 @@
 			<!--Initial buttons-->
 			<br />
 			<br />
+			<!--Reset button turn and victory system-->
 			<button id="butt" onclick="myfunc_2()">RESET</button>
 			<h1 style="display: inline-block">Player Turn:</h1>
 			<h1 style="display: inline-block" id="turn"></h1>
 			<h1 id="print"></h1>
 		</section>
-
+<!--Link to script file-->
 		<script src="Resources/Index.js"></script>
 	</body>
 </html>
