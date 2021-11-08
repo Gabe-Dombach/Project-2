@@ -33,13 +33,13 @@ $(".choices").click(function () {
 		} else {
 			window.alert("Computer chose Paper. You won!.");
 		}
-	} else {
+	} else if (compChoice == "scissors"){
 		if (playerChoice == "scissors") {
-			window.alert("Computer chose Scissors. You won!");
+			window.alert("Computer chose Scissors. You tied!");
 		} else if (playerChoice == "paper") {
 			window.alert("Computer chose Scissors. You lost.");
 		} else {
-			window.alert("Computer chose Scissors. You tied.");
+			window.alert("Computer chose Scissors. You won.");
 		}
 	}
 });
