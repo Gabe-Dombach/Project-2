@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 { 
     text-decoration: none;
     color: black;
@@ -37,4 +38,16 @@ img {
 }
 body { 
     background-color: lightblue;
+=======
+.goBack{
+	text-decoration: none;
+	padding:5vh;
+	border: 2px solid red;
+	margin:10px;
+	color: red;
+	font-size: xx-large;
+	background-color: moccasin;
+    margin-left:60%;
+    
+>>>>>>> b73fcd0d1bf9dde1fd6f4effbd4bfbcc4daa295f
 }
