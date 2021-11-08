@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+h1 { 
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    padding:1%;
+    border:6px solid blue;
+    width: 400px;
+    margin:auto;
+    background-color: lightcoral;
+}
+a { 
+    text-decoration: none;
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+    padding:1%;
+
+    width: 400px;
+    margin:auto;
+}
+h2 { 
+    color: black;
+    font-size: large;
+    text-align: center;
+    padding: 1%;
+    border:1px solid blue ;
+    width: 400px;
+background-color:lightcoral;
+}
+img { 
+    height: 400px;
+
+}
+.rock-Choice{ 
+    margin-right: 150px;
+}
+body { 
+    background-color: lightblue;
+=======
 .goBack{
 	text-decoration: none;
 	padding:5vh;
@@ -8,4 +49,5 @@
 	background-color: moccasin;
     margin-left:60%;
     
+>>>>>>> b73fcd0d1bf9dde1fd6f4effbd4bfbcc4daa295f
 }
