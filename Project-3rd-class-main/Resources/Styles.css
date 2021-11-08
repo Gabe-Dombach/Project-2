@@ -63,6 +63,7 @@ header {
 	margin:10px;
 	color: red;
 	font-size: xx-large;
+	background-color: moccasin;
 }
 .gameboard {
 	border: solid black 5px;
