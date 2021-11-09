@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--JQuery and styling links-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="Resources/styles.css" />
 	</head>
 	<body>
 		<header>
+			<!--Title and  back to main navigation -->
 			<h1>ROCK-PAPER SCISSORS</h1>
 			<a href="../main_page.html" class="goBack">F*** go back</a>
 
 			<div class="scoreboard">
-				<h2 class="playerScore">Player:</h2>
-				<h2 class="aiScore">Computer:</h2>
+				<!--Scoreboard setup-->
+				<h2 class="playerScore"><span id="namePlayer"></span>: <span class="playerSelected"></span></h2>
+				<h2 class="aiScore">Computer: <span class="compSelected"></span></h2>
 			</div>
 		</header>
 		<section class="leftBox">
-
 			<div class="boxxer">
-				<a href="#" class="rock-Choice choices"></a>
-
-			<div class="choice buttons">
-				<a href="" class="rock-Choice choices"
-
+				<!--Choices-->
+				<a class="rock-Choice choices"
 					><img src="Resources/images/rock.png"
 				/></a>
-				<a href="" class="paper-Choice choices"
+				<a class="paper-Choice choices"
 					><img src="Resources/images/paper.jpeg"
 				/></a>
-				<a href="" class="scissor-Choice choices"
+				<a class="scissor-Choice choices"
 					><img src="Resources/images/scissors.jpeg"
 				/></a>
 			</div>
 		</section>
-
+		<section id="winnerBox">
+			<h2>Winner: <span class="winner"></span></h2>
+		</section>
+		<section id="nameInput">
+			<h3 class="nameText">Enter your name: </h3>
+			<input type="text" id="inputbox">
+			<a class="enterName">Enter</a>
+		</section>
+<!--Link to script page-->
 		<script src="Resources/script.js"></script>
 	</body>
 </html>
