@@ -1,7 +1,10 @@
 const rockPaperScissors = ["Rock", "Paper", "Scissors"];
-let victoryNoise = new Audio("win.mp3");
-let defeatNoise = new Audio('defeat.mp3');
-let tieNoise = new Audio('tie.mp3');
+let victoryNoise = new Audio();
+victoryNoise.src='Resources/win.mp3'
+let defeatNoise = new Audio();
+defeatNoise.src='Resources/defeat.mp3'
+let tieNoise = new Audio();
+tieNoise.src='Resources/tie.mp3'
 //player choice calls
 $(".rock-Choice").click(function () {
 	playerChoice = "Rock";
