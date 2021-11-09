@@ -1,7 +1,7 @@
 let playerName = "";
+let user = JSON.parse(localStorage.getItem('users'));
 
 $(".enterName").click(function(){
-	let user = JSON.parse(localStorage.get('users'));
 	playerName = $("#inputbox").val()
 	$("#namePlayer").html(playerName)
 	$("#nameInput").css("display", "none")
@@ -44,14 +44,14 @@ $(".choices").click(function () {
 			defeatNoise.play();
 			user.loseRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Paper") {
 			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
 			user.winsRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
@@ -65,14 +65,14 @@ $(".choices").click(function () {
 			defeatNoise.play();
 			user.loseRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Scissors") {
 			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
 			user.winsRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
@@ -86,14 +86,14 @@ $(".choices").click(function () {
 			victoryNoise.play()
 			user.winsRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Paper") {
 			gameWinner = "Computer";
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
 			user.loseRPS+=1;
 			localStorage.setItem('users',JSON.stringify(user))
-			user = JSON.parse(localStorage.get('users'));
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
