@@ -7,11 +7,11 @@ $(document).ready(function () {
 	$("#b6").prop("disabled", true);
 	$("#b7").prop("disabled", true);
 	$("#b8").prop("disabled", true);
-	$("#b9").prop("disabled", true);
+	$("#b9").prop("disabled", true);//disables all tiles when the page loads
 });
 let backroundMusic = new Audio();
 backroundMusic.src = "Resources/music.mp3";
-backroundMusic.loop = true;
+backroundMusic.loop = true;//set up audio object and play when start is pushed
 function start() {
 	backroundMusic.play();
 
@@ -24,7 +24,7 @@ function start() {
 	$("#b7").prop("disabled", false);
 	$("#b8").prop("disabled", false);
 	$("#b9").prop("disabled", false);
-	flag = 1;
+	flag = 1;//enable squares and set the turn to 1
 		// Here, Printing Result
 		if (flag == 1) {
 			$("#turn").html("X");
@@ -62,6 +62,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b1 == "x" || b1 == "X") &&
 		(b4 == "x" || b4 == "X") &&
@@ -77,6 +79,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b7 == "x" || b7 == "X") &&
 		(b8 == "x" || b8 == "X") &&
@@ -92,6 +96,8 @@ function myfunc() {
 		$("#b5").prop("disabled", true);
 		$("#b6").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b3 == "x" || b3 == "X") &&
 		(b6 == "x" || b6 == "X") &&
@@ -107,6 +113,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b8").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b1 == "x" || b1 == "X") &&
 		(b5 == "x" || b5 == "X") &&
@@ -122,6 +130,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b8").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b3 == "x" || b3 == "X") &&
 		(b5 == "x" || b5 == "X") &&
@@ -137,6 +147,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b2 == "x" || b2 == "X") &&
 		(b5 == "x" || b5 == "X") &&
@@ -152,6 +164,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	} else if (
 		(b4 == "x" || b4 == "X") &&
 		(b5 == "x" || b5 == "X") &&
@@ -167,6 +181,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player X won");
+		backroundMusic.pause();
+
 	}
 
 	// Checking of Player X finsh
@@ -187,6 +203,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b1 == "0" || b1 == "0") &&
 		(b4 == "0" || b4 == "0") &&
@@ -202,6 +220,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b7 == "0" || b7 == "0") &&
 		(b8 == "0" || b8 == "0") &&
@@ -217,6 +237,8 @@ function myfunc() {
 		$("#b5").prop("disabled", true);
 		$("#b6").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b3 == "0" || b3 == "0") &&
 		(b6 == "0" || b6 == "0") &&
@@ -232,6 +254,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b8").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b1 == "0" || b1 == "0") &&
 		(b5 == "0" || b5 == "0") &&
@@ -247,6 +271,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b8").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b3 == "0" || b3 == "0") &&
 		(b5 == "0" || b5 == "0") &&
@@ -262,6 +288,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b2 == "0" || b2 == "0") &&
 		(b5 == "0" || b5 == "0") &&
@@ -277,6 +305,8 @@ function myfunc() {
 		$("#b7").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	} else if (
 		(b4 == "0" || b4 == "0") &&
 		(b5 == "0" || b5 == "0") &&
@@ -292,6 +322,8 @@ function myfunc() {
 		$("#b8").prop("disabled", true);
 		$("#b9").prop("disabled", true);
 		$("#print").html("Player 0 won");
+		backroundMusic.pause();
+
 	}
 
 	// Checking of Player 0 finsh

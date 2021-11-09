@@ -1,11 +1,97 @@
-.goBack{
+* {
+		/*Initial page setup*/
+	margin: 0%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 { /*main title styling*/
 	text-decoration: none;
-	padding:5vh;
+	color: black;
+	font-size: xx-large;
+	text-align: center;
+	padding: 1%;
+	border: 6px solid red;
+	width: 400px;
+	margin: auto;
+	background-color: #fde4b5;
+}
+
+body {
+	width: 100%;
+}
+
+a {/*navbar styling */
+	text-decoration: none;
+	color: red;
+	font-size: xx-large;
+	text-align: center;
+	padding: 1%;
+	width: 400px;
+	margin: auto;
+}
+
+h2 {
+	/* header sizing and border additions */
+	color: black;
+	font-size: large;
+	text-align: center;
+	padding: 1%;
+	border: 1px solid red;
+	width: 400px;
+	background-color: #fde4b5;
+}
+
+img { /*Image sizing */
+    cursor:pointer;
+	height: 30vh;
+	width: 30vh;
+	margin: 0;
+}
+
+.boxxer {
+	display: flex;
+	/* height: auto; */
+	justify-content: center;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.goBack {
+	/*return to menue button styling*/
+	text-decoration: none;
+	padding: 5vh;
 	border: 2px solid red;
-	margin:10px;
+	margin: 10px;
 	color: red;
 	font-size: xx-large;
 	background-color: moccasin;
-    margin-left:60%;
-    
+	margin-left: 80vw;
+}
+
+#nameInput {
+    display: flex;
+	padding: 2vh;
+	border: 2px solid red;
+	color: red;
+	font-size: xx-large;
+	background-color: moccasin;
+    position: absolute;
+    z-index: 10;
+    width: 50vw;
+    justify-content: space-between;
+    margin-left: 50vh;
+    margin-top: -30vh;
+}
+
+#inputbox {
+    width: 15vw;
+}
+
+.enterName {
+    padding: 0;
+    width: 5vw;
+    cursor: pointer;
 }
