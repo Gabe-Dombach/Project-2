@@ -1,6 +1,3 @@
-* {
-}
-
 .button {
 	text-decoration: none;
 	color: red;
@@ -9,6 +6,7 @@
 	padding: 10%;
 	border: 5px solid red; /*A tag styling to make it look like a button*/
 }
+
 .buttons {
 	display: flex;
 	flex-direction: column;
@@ -19,9 +17,11 @@
 	/*Button flex container positioning and setup*/
 	margin-top: 10%;
 }
+
 body {
 	background-color: #89cfef;
 }
+
 a {
 	background-color: moccasin;
 }
