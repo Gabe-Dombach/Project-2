@@ -13,7 +13,7 @@
 
 			<div class="scoreboard">
 				<!--Scoreboard setup-->
-				<h2 class="playerScore">Player: <span class="playerSelected"></span></h2>
+				<h2 class="playerScore"><span id="namePlayer"></span>: <span class="playerSelected"></span></h2>
 				<h2 class="aiScore">Computer: <span class="compSelected"></span></h2>
 			</div>
 		</header>
@@ -33,6 +33,11 @@
 		</section>
 		<section id="winnerBox">
 			<h2>Winner: <span class="winner"></span></h2>
+		</section>
+		<section id="nameInput">
+			<h3 class="nameText">Enter your name: </h3>
+			<input type="text" id="inputbox">
+			<a class="enterName">Enter</a>
 		</section>
 <!--Link to script page-->
 		<script src="Resources/script.js"></script>

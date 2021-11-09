@@ -1,3 +1,11 @@
+let playerName = "";
+
+$(".enterName").click(function(){
+	playerName = $("#inputbox").val()
+	$("#namePlayer").html(playerName)
+	$("#nameInput").css("display", "none")
+})
+
 const rockPaperScissors = ["Rock", "Paper", "Scissors"];
 let victoryNoise = new Audio();
 victoryNoise.src='Resources/win.mp3'
@@ -34,7 +42,7 @@ $(".choices").click(function () {
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
 		} else if (playerChoice == "Paper") {
-			gameWinner = "Player";
+			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
 		} else {
@@ -49,7 +57,7 @@ $(".choices").click(function () {
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
 		} else if (playerChoice == "Scissors") {
-			gameWinner = "Player";
+			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
 		} else {
@@ -60,7 +68,7 @@ $(".choices").click(function () {
 	} else if (compChoice == "Scissors") {
 		$(".compSelected").html(compChoice);
 		if (playerChoice == "Rock") {
-			gameWinner = "Player";
+			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play()
 		} else if (playerChoice == "Paper") {
