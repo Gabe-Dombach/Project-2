@@ -19,6 +19,7 @@ h1 { /*main title styling*/
 
 body {
 	width: 100%;
+	background-color: #89CFEF;
 }
 
 a {/*navbar styling */
@@ -53,10 +54,6 @@ img { /*Image sizing */
 	display: flex;
 	/* height: auto; */
 	justify-content: center;
-}
-
-body {
-	background-color: lightblue;
 }
 
 .goBack {
