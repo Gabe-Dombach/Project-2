@@ -5,9 +5,12 @@ $(document).ready(function(){
         let newUser = {};
         let address = $('#username').val();
         let test = false
-        if(localStorage.getItem('users')===null){
+        console.log(userArr);
+
+        if(localStorage.getItem('users')==null){
           newUser = {
             userName:address,
+            
             wins:0,
             losses:0,
 
@@ -21,21 +24,27 @@ $(document).ready(function(){
             if(userArr[x] == address){
                 localStorage.setItem('currentUser',x);
                 test = true
+                console.log(userArr);
+
 
             }
         }}
         if(test==true){
             window.location.replace('../main_page.html');
+            console.log(userArr);
+
         }
         else{
             userArr = localStorage.getItem('users');
+            console.log(userArr);
+
           newUser = {
             userName:address,
             wins:0,
             losses:0,
         }
-        console.log(userArr)
-        userArr.push(newUser)
+        console.log(userArr);
+        userArr.push(newUser);
         localStorage.setItem('users',JSON.stringify(userArr));
         localStorage.setItem('currentUser',userArr.length-1);
         window.location.replace('../main_page.html');
