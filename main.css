@@ -1,14 +1,12 @@
-* {
-}
-
 .button {
 	text-decoration: none;
 	color: red;
 	font-size: xx-large;
 	text-align: center;
 	padding: 10%;
-	border: 5px solid red;/*A tag styling to make it look like a button*/
+	border: 5px solid red; /*A tag styling to make it look like a button*/
 }
+
 .buttons {
 	display: flex;
 	flex-direction: column;
@@ -16,12 +14,14 @@
 	height: 60vh;
 	justify-content: space-evenly;
 	margin: auto;
-/*Button flex container positioning and setup*/
+	/*Button flex container positioning and setup*/
 	margin-top: 10%;
 }
+
 body {
 	background-color: #89cfef;
 }
+
 a {
 	background-color: moccasin;
 }
