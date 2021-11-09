@@ -7,7 +7,7 @@
 	font-size: xx-large;
 	text-align: center;
 	padding: 10%;
-	border: 5px solid red;/*A tag styling to make it look like a button*/
+	border: 5px solid red; /*A tag styling to make it look like a button*/
 }
 .buttons {
 	display: flex;
@@ -16,7 +16,7 @@
 	height: 60vh;
 	justify-content: space-evenly;
 	margin: auto;
-/*Button flex container positioning and setup*/
+	/*Button flex container positioning and setup*/
 	margin-top: 10%;
 }
 body {
