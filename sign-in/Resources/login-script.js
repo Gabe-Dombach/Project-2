@@ -16,6 +16,7 @@ $(document).ready(function(){
 
         }
         userArr.push(newUser);
+        localStorage.removeItem('users')
         localStorage.setItem('users',JSON.stringify(userArr));
     }
     else{
@@ -36,6 +37,7 @@ $(document).ready(function(){
         }
         else{
             userArr = localStorage.getItem('users');
+
             console.log(userArr);
 
           newUser = {
@@ -44,8 +46,8 @@ $(document).ready(function(){
             losses:0,
         }
         console.log(userArr);
-        userArr.push(newUser);
-        localStorage.setItem('users',JSON.stringify(userArr));
+        localStorage.removeItem('users')
+        localStorage.setItem('users',JSON.stringify(newUser));
         localStorage.setItem('currentUser',userArr.length-1);
         window.location.replace('../main_page.html');
 
