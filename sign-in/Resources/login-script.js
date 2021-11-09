@@ -3,15 +3,21 @@ $(document).ready(function(){
     function isEmail(address){
         address = address.split('')
         if(address.indexOf('@') != -1 && address.indexOf('@') != 0 && address.indexOf('.' ) && address.indexOf('.') > address.indexOf('@')){
+            console.log(true)
             return true;
         }
         else{
+            console.log(false)
             return false;
         }
     }
     
   $('.submit').click(function(){
       let curretStorage = JSON.parse(localStorage.getItem('users'));
+      let mail = false;
+      if(isEmail(curretStorage.email)){
+          mail = true;
+      }
         if(curretStorage == null && isEmail($('#email').val())){
             const newUser = {
                 userName :$('#username').val(),
@@ -23,14 +29,16 @@ $(document).ready(function(){
             }
             localStorage.setItem('users',JSON.stringify(newUser))
         }
-        else if($('#username').val() == curretStorage.userName){
+        else if($('#username').val() == curretStorage.userName  && $('#email').val()== curretStorage.email){
             window.location.replace('../main_page.html');
         }
-        else if(!isEmail($('#email').val())){
+        else if(mail == false){
             window.alert('Please enter a valid email adress!')
         }
         else{
             window.alert('INCORRECT CODE')
+            console.log(curretStorage.userName, curretStorage.email)
+            console.log($('#username').val(),$('#email').val())
         }
   });
   
