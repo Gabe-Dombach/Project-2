@@ -2,7 +2,6 @@
 $(document).ready(function(){
     $('.submit').click(function(){
         let userArr = new Array();
-
         let newUser = {};
         let address = $('#username').val();
         let test = false
@@ -14,7 +13,7 @@ $(document).ready(function(){
 
         }
         userArr.push(newUser);
-        localStorage.setItem('users',userArr);
+        localStorage.setItem('users',JSON.stringify(userArr));
     }
     else{
         userArr = localStorage.getItem('users');
@@ -37,7 +36,7 @@ $(document).ready(function(){
         }
         console.log(userArr)
         userArr.push(newUser)
-        localStorage.setItem('users',userArr);
+        localStorage.setItem('users',JSON.stringify(userArr));
         localStorage.setItem('currentUser',userArr.length-1);
         window.location.replace('../main_page.html');
 
