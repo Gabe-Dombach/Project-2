@@ -1,3 +1,17 @@
+let againstPlayer = false
+let boxes = [$("#b1"), $("#b2"), $("#b3"), $("#b4"), $("#b5"), $("#b6"), $("#b7"), $("#b8"), $("#b9")]
+
+function aiMove() {
+    let random = Math.floor(Math.random() * boxes.length);
+    if($(boxes[random]).val('')) {
+        $(boxes[random]).val("0");
+        $(boxes[random]).prop("disabled", true);
+        flag = 1;
+    } else {
+			aiMove()
+	 }
+}
+
 $(document).ready(function () {
 	$("#b1").prop("disabled", true);
 	$("#b2").prop("disabled", true);
@@ -392,6 +406,7 @@ function myfunc_2() {
 // and put accordingly value X or 0
 flag = 1;
 function myfunc_3() {
+	if (againstPlayer == true){
 	if (flag == 1) {
 		$("#b1").val("X");
 		$("#b1").prop("disabled", true);
@@ -401,100 +416,180 @@ function myfunc_3() {
 		$("#b1").prop("disabled", true);
 		flag = 1;
 	}
+} else{
+	if (flag == 1) {
+		$("#b1").val("X");
+		$("#b1").prop("disabled", true);
+		flag = 0;
+		aiMove()
+	}
+}
 }
 
 function myfunc_4() {
-	if (flag == 1) {
-		$("#b2").val("X");
-		$("#b2").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b2").val("X");
+			$("#b2").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b2").val("0");
+			$("#b2").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b2").val("0");
-		$("#b2").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b2").val("X");
+			$("#b2").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_5() {
-	if (flag == 1) {
-		$("#b3").val("X");
-		$("#b3").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b3").val("X");
+			$("#b3").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b3").val("0");
+			$("#b3").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b3").val("0");
-		$("#b3").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b3").val("X");
+			$("#b3").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_6() {
-	if (flag == 1) {
-		$("#b4").val("X");
-		$("#b4").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b4").val("X");
+			$("#b4").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b4").val("0");
+			$("#b4").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b4").val("0");
-		$("#b4").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b4").val("X");
+			$("#b4").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_7() {
-	if (flag == 1) {
-		$("#b5").val("X");
-		$("#b5").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b5").val("X");
+			$("#b5").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b5").val("0");
+			$("#b5").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b5").val("0");
-		$("#b5").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b5").val("X");
+			$("#b5").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_8() {
-	if (flag == 1) {
-		$("#b6").val("X");
-		$("#b6").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b6").val("X");
+			$("#b6").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b6").val("0");
+			$("#b6").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b6").val("0");
-		$("#b6").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b6").val("X");
+			$("#b6").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_9() {
-	if (flag == 1) {
-		$("#b7").val("X");
-		$("#b7").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b7").val("X");
+			$("#b7").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b7").val("0");
+			$("#b7").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b7").val("0");
-		$("#b7").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b7").val("X");
+			$("#b7").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_10() {
-	if (flag == 1) {
-		$("#b8").val("X");
-		$("#b8").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b8").val("X");
+			$("#b8").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b8").val("0");
+			$("#b8").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b8").val("0");
-		$("#b8").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b8").val("X");
+			$("#b8").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
 
 function myfunc_11() {
-	if (flag == 1) {
-		$("#b9").val("X");
-		$("#b9").prop("disabled", true);
-		flag = 0;
+	if (againstPlayer == true) {
+		if (flag == 1) {
+			$("#b9").val("X");
+			$("#b9").prop("disabled", true);
+			flag = 0;
+		} else {
+			$("#b9").val("0");
+			$("#b9").prop("disabled", true);
+			flag = 1;
+		}
 	} else {
-		$("#b9").val("0");
-		$("#b9").prop("disabled", true);
-		flag = 1;
+		if (flag == 1) {
+			$("#b9").val("X");
+			$("#b9").prop("disabled", true);
+			flag = 0;
+			aiMove()
+		}
 	}
 }
