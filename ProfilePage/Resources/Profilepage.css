@@ -33,4 +33,7 @@ h4 {
 	display: flex;
 	justify-content: space-evenly;
 	font-size: x-large;
+
+	color: red;
+
 }
