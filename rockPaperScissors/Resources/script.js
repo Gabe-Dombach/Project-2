@@ -1,4 +1,5 @@
 let playerName = "";
+let user = JSON.parse(localStorage.getItem('users'));
 
 $(".enterName").click(function(){
 	playerName = $("#inputbox").val()
@@ -41,10 +42,16 @@ $(".choices").click(function () {
 			let gameWinner = "Computer";
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
+			user.loseRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Paper") {
 			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
+			user.winsRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
@@ -56,10 +63,16 @@ $(".choices").click(function () {
 			gameWinner = "Computer";
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
+			user.loseRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Scissors") {
 			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play();
+			user.winsRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
@@ -71,10 +84,16 @@ $(".choices").click(function () {
 			gameWinner = playerName;
 			$(".winner").html(gameWinner);
 			victoryNoise.play()
+			user.winsRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else if (playerChoice == "Paper") {
 			gameWinner = "Computer";
 			$(".winner").html(gameWinner);
 			defeatNoise.play();
+			user.loseRPS+=1;
+			localStorage.setItem('users',JSON.stringify(user))
+			user = JSON.parse(localStorage.getItem('users'));
 		} else {
 			gameWinner = "Tie";
 			$(".winner").html(gameWinner);
