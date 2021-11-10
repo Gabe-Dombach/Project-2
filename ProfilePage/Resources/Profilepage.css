@@ -33,6 +33,21 @@ h4 {
 	display: flex;
 	justify-content: space-evenly;
 	font-size: x-large;
+}
+.back-button{
+	font-size: xx-large;
+	text-decoration: none;
+	color: red;
+	background-color: moccasin;
+	padding:2%;
+
+	margin-top: 20%;
+	border: 1px solid red;
+	padding-left: 20%;
+	padding-right: 20%;
+	position: absolute;
+	left: 25%;
+	top:0%;
 
 	color: red;
 

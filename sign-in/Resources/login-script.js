@@ -25,11 +25,11 @@ $(document).ready(function(){
                 loseRPS:0
             }
             localStorage.setItem('users',JSON.stringify(newUser))
-            window.location.replace('../main_page.html');
+            window.location.replace('../main/main_page.html');
 
         }
         else if($('#username').val() == curretStorage.userName  && $('#email').val()== curretStorage.email){
-            window.location.replace('../main_page.html');
+            window.location.replace('../main/main_page.html');
         }
      
         else{
