@@ -83,3 +83,8 @@ header {
 	margin: auto;
 	border-radius: 4px;/*setup for restart game button*/
 }
+
+.size{
+	width: 100px;
+	
+}
