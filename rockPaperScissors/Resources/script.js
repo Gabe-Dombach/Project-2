@@ -1,11 +1,15 @@
-let playerName = "";
+let playerName = localStorage.getItem('userName');
 let user = JSON.parse(localStorage.getItem('users'));
 
-$(".enterName").click(function(){
-	playerName = $("#inputbox").val()
-	$("#namePlayer").html(playerName)
-	$("#nameInput").css("display", "none")
+$(document).ready(function()  {
+	$("#namePlayer").html(user.userName);
 })
+
+// $(".enterName").click(function(){
+// 	playerName = $("#inputbox").val()
+// 	$("#namePlayer").html(playerName)
+// 	$("#nameInput").css("display", "none")
+// })
 
 const rockPaperScissors = ["Rock", "Paper", "Scissors"];
 let victoryNoise = new Audio();
