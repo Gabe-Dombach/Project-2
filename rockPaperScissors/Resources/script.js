@@ -1,8 +1,20 @@
 let playerName = localStorage.getItem('userName');
 let user = JSON.parse(localStorage.getItem('users'));
+let playAgainstPlayer = false
+let playerTurn = 1
+let compChoice = ""
+let playerChoice = ""
 
 $(document).ready(function()  {
 	$("#namePlayer").html(user.userName);
+})
+
+$("#solo").click(function() {
+	playAgainstPlayer = false
+})
+
+$("#coOp").click(function() {
+	playAgainstPlayer = true
 })
 
 // $(".enterName").click(function(){
@@ -20,24 +32,68 @@ let tieNoise = new Audio();
 tieNoise.src='Resources/tie.mp3'
 //player choice calls
 $(".rock-Choice").click(function () {
-	playerChoice = "Rock";
-	$(".playerSelected").html(playerChoice);
+	if (playAgainstPlayer == true) {
+		if (playerTurn == 1) {
+			playerChoice = "Rock";
+			$(".playerSelected").html(playerChoice);
+			playerTurn = 2
+		}
+		else {
+			compChoice = "Rock";
+			$("compChoice").html(compChoice);
+			playerTurn = 1
+		}
+	}
+	else if (playAgainstPlayer == false) {
+		playerChoice = "Rock";
+		$(".playerSelected").html(playerChoice);
+	}
 });
 
 $(".paper-Choice").click(function () {
-	playerChoice = "Paper";
-	$(".playerSelected").html(playerChoice);
+	if (playAgainstPlayer == true) {
+		if (playerTurn == 1) {
+			playerChoice = "Paper";
+			$(".playerSelected").html(playerChoice);
+			playerTurn = 2
+		}
+		else {
+			compChoice = "Paper";
+			$("compChoice").html(compChoice);
+			playerTurn = 1
+		}
+	}
+	else if (playAgainstPlayer == false){
+		playerChoice = "Paper";
+		$(".playerSelected").html(playerChoice);
+	}
 });
 
 $(".scissor-Choice").click(function () {
-	playerChoice = "Scissors";
-	$(".playerSelected").html(playerChoice);
+	if (playAgainstPlayer == true) {
+		if (playerTurn == 1) {
+			playerChoice = "Scissors";
+			$(".playerSelected").html(playerChoice);
+			playerTurn = 2
+		}
+		else {
+			compChoice = "Scissors";
+			$("compChoice").html(compChoice);
+			playerTurn = 1
+		}
+	}
+	else if (playAgainstPlayer == false){
+		playerChoice = "Scissors";
+		$(".playerSelected").html(playerChoice);
+	}
 });
 
 $(".choices").click(function () {
+	if (playAgainstPlayer == false) {
 	const random = Math.floor(Math.random() * rockPaperScissors.length); //Random choice generator (AI oponent)
 
 	compChoice = rockPaperScissors[random];
+	}
 
 	//win logic
 	if (compChoice == "Rock") {
