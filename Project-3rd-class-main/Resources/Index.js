@@ -12,6 +12,14 @@ function aiMove() {
 	 }
 }
 
+$("#co-op").click(function(){
+	againstPlayer = true;
+})
+
+$("#solo").click(function(){
+	againstPlayer = false;
+})
+
 $(document).ready(function () {
 	$("#b1").prop("disabled", true);
 	$("#b2").prop("disabled", true);
