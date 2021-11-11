@@ -5,6 +5,7 @@ let playerTurn = 1
 let compChoice = ""
 let playerChoice = ""
 
+
 $(document).ready(function()  {
 	$("#namePlayer").html(user.userName);
 })
@@ -31,6 +32,8 @@ defeatNoise.src='Resources/defeat.mp3'
 let tieNoise = new Audio();
 tieNoise.src='Resources/tie.mp3'
 //player choice calls
+
+
 $(".rock-Choice").click(function () {
 	if (playAgainstPlayer == true) {
 		if (playerTurn == 1) {
