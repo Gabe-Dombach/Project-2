@@ -3,7 +3,7 @@ let boxes = [$("#b1"), $("#b2"), $("#b3"), $("#b4"), $("#b5"), $("#b6"), $("#b7"
 
 function aiMove() {
     let random = Math.floor(Math.random() * boxes.length);
-    if($(boxes[random]).val('')) {
+    if($(boxes[random]).val() == "") {
         $(boxes[random]).val("0");
         $(boxes[random]).prop("disabled", true);
         flag = 1;
