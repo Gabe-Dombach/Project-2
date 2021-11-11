@@ -1,5 +1,6 @@
 let playerName = "";
 let user = JSON.parse(localStorage.getItem('users'));
+let gamemode = false;
 
 $(".enterName").click(function(){
 	playerName = $("#inputbox").val()
@@ -15,6 +16,8 @@ defeatNoise.src='Resources/defeat.mp3'
 let tieNoise = new Audio();
 tieNoise.src='Resources/tie.mp3'
 //player choice calls
+
+
 $(".rock-Choice").click(function () {
 	playerChoice = "Rock";
 	$(".playerSelected").html(playerChoice);
