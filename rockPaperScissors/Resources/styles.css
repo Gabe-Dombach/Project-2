@@ -92,3 +92,14 @@ img { /*Image sizing */
     width: 5vw;
     cursor: pointer;
 }
+
+.size{
+	width: 100px;
+}
+
+.row{
+	text-align: center;
+	flex-direction: row;
+	margin-top: 10px;
+}
+
